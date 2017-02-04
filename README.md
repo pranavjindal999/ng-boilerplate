@@ -1,2 +1,3 @@
-# ng-boilerplate
-A simple boilerplate for angular 1.x app.
+﻿# Angular Boilerplate
+
+A simple boilerplate for starting an angular app. Nothing fancy.
