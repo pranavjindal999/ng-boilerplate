@@ -36,7 +36,7 @@ module.exports = function(grunt) {
             },
         },
         ngtemplates: {
-            app: {                
+            app: {
                 src: 'src/**/*.html',
                 dest: 'dist/js/_temp/templates.js',
                 options: {
@@ -54,12 +54,21 @@ module.exports = function(grunt) {
                 }
             }
         },
-        clean: ['dist/js/_temp/', 'dist/css/style.purified.css']
+        clean: ['dist/js/_temp/', 'dist/css/style.purified.css'],
+        copy: {
+            main: {
+                expand: true,
+                cwd: 'src/fonts',
+                src: '**',
+                dest: 'dist/fonts'
+            },
+        }
     });
-    grunt.registerTask('default', ['ngtemplates', 'uglify', 'purifycss', 'cssmin','clean']);
+    grunt.registerTask('default', ['ngtemplates', 'uglify', 'purifycss', 'cssmin', 'clean', 'copy']);
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-purifycss');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-angular-templates');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 };

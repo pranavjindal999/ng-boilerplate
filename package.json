@@ -6,6 +6,7 @@
     "grunt": "latest",
     "grunt-angular-templates": "latest",
     "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-purifycss": "latest"
