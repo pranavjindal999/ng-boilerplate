@@ -6,8 +6,6 @@
 
    function headerController($scope, $rootScope){
    		var headerVm = this;
-
-   		headerVm.test = "App Started";
    }
 
 })(window.angular);
